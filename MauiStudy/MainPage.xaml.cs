@@ -20,5 +20,10 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private void OnOpenHelixView(object sender, EventArgs e)
+        {
+
+        }
     }
 }

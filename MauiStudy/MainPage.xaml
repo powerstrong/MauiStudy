@@ -36,6 +36,12 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Text="Click me" />
 
+            <Button
+                Clicked="OnOpenHelixView"
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Open helix-toolkit view" />
+
         </VerticalStackLayout>
     </ScrollView>
 

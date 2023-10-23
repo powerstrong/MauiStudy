@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiStudy.HelixView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:h="http://helix-toolkit.org/wpf"
+    Title="HelixView">
+    <ContentPage.Content>
+        <h:HelixViewport3D ZoomExtentsWhenLoaded="True">
+            <h:DefaultLights />
+            <h:CubeVisual3D
+                x:Name="MyCube"
+                Center="0,0,0"
+                SideLength="3" />
+        </h:HelixViewport3D>
+    </ContentPage.Content>
+</ContentPage>
