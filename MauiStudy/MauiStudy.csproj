@@ -49,15 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="HelixToolkit" Version="2.24.0" />
-		<PackageReference Include="HelixToolkit.Wpf" Version="2.24.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="HelixView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

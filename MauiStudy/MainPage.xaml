@@ -4,45 +4,41 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25"
-            VerticalOptions="Center">
-
-            <Image
-                HeightRequest="200"
-                HorizontalOptions="Center"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                Source="dotnet_bot.png" />
-
+    <Grid ColumnDefinitions=".25*, .75*" RowDefinitions="100, auto, *">
+        <Image
+            Grid.ColumnSpan="2"
+            Background="orange"
+            Source="dotnet_bot.png" />
+        <Label Text="asdf" />
+        <StackLayout Grid.Row="1" HorizontalOptions="Center">
             <Label
-                FontSize="32"
-                HorizontalOptions="Center"
-                SemanticProperties.HeadingLevel="Level1"
-                Text="Hello, World!" />
-
+                Grid.Row="1"
+                HeightRequest="50"
+                Text="first thing" />
             <Label
-                FontSize="18"
-                HorizontalOptions="Center"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                SemanticProperties.HeadingLevel="Level2"
-                Text="Welcome to .NET Multi-platform App UI" />
-
+                Grid.Row="1"
+                HeightRequest="50"
+                Text="second thing" />
+            <Label
+                Grid.Row="1"
+                HeightRequest="50"
+                Text="third thing" />
+        </StackLayout>
+        <StackLayout Grid.Row="1" Grid.Column="1">
             <Button
-                x:Name="CounterBtn"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Text="Click me" />
-
+                Background="pink"
+                HeightRequest="50"
+                Text="Start"
+                TextColor="Yellow" />
             <Button
-                Clicked="OnOpenHelixView"
-                HorizontalOptions="Center"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Text="Open helix-toolkit view" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+                Background="lightgreen"
+                HeightRequest="50"
+                Text="Stop" />
+            <Button
+                Background="lightblue"
+                HeightRequest="50"
+                Text="Pause" />
+        </StackLayout>
+    </Grid>
 
 </ContentPage>
