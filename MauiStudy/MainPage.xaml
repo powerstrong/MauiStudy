@@ -8,7 +8,7 @@
         Margin="5"
         ColumnDefinitions=".75*, .25*"
         ColumnSpacing="10"
-        RowDefinitions="100, auto, *"
+        RowDefinitions="100, auto, auto, *"
         RowSpacing="10">
         <Grid Grid.ColumnSpan="2" BackgroundColor="LightGoldenrodYellow">
             <Image Margin="20" Source="plaif_logo.png" />
@@ -19,7 +19,13 @@
             Grid.Column="1"
             Text="Add" />
 
-        <CollectionView Grid.Row="2" Grid.ColumnSpan="2">
+        <Button
+            Grid.Row="2"
+            BackgroundColor="LightPink"
+            Clicked="Button_Clicked_Calculator"
+            Text="Calculator" />
+
+        <CollectionView Grid.Row="3" Grid.ColumnSpan="2">
             <CollectionView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Apples</x:String>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiStudy.Calculator"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Calculator">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="AntiqueWhite" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="Large" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Margin" Value="1" />
+        </Style>
+    </ContentPage.Resources>
+    <Grid ColumnDefinitions="*, *, *, *" RowDefinitions="1.5*, *, *, *, *, *, *">
+        <Label
+            x:Name="ResultLabel"
+            Grid.ColumnSpan="4"
+            Margin="10"
+            FontSize="40"
+            HorizontalTextAlignment="End"
+            Text="0"
+            VerticalTextAlignment="Center" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="0"
+            Clicked="Button_Clicked"
+            Text="%" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Clicked="Button_Clicked_1"
+            Text="CE" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Clicked="Button_Clicked_2"
+            Text="C" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            Clicked="Button_Clicked_3"
+            Text="←" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            Clicked="Button_Clicked_4"
+            Text="1/x" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Clicked="Button_Clicked_5"
+            Text="x²" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="2"
+            Clicked="Button_Clicked_6"
+            Text="2√x" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            Clicked="Button_Clicked_7"
+            Text="÷" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            Clicked="Button_Clicked_num7"
+            Text="7" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Clicked="Button_Clicked_num8"
+            Text="8" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="2"
+            Clicked="Button_Clicked_num9"
+            Text="9" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Clicked="Button_Clicked_multiply"
+            Text="×" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="0"
+            Clicked="Button_Clicked_num4"
+            Text="4" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            Clicked="Button_Clicked_num5"
+            Text="5" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="2"
+            Clicked="Button_Clicked_num6"
+            Text="6" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
+            Clicked="Button_Clicked_minus"
+            Text="-" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="0"
+            Clicked="Button_Clicked_num1"
+            Text="1" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="1"
+            Clicked="Button_Clicked_num2"
+            Text="2" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="2"
+            Clicked="Button_Clicked_num3"
+            Text="3" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="3"
+            Clicked="Button_Clicked_plus"
+            Text="+" />
+        <Button
+            Grid.Row="6"
+            Grid.Column="0"
+            Clicked="Button_Clicked_plusorminus"
+            Text="+/-" />
+        <Button
+            Grid.Row="6"
+            Grid.Column="1"
+            Clicked="Button_Clicked_num0"
+            Text="0" />
+        <Button
+            Grid.Row="6"
+            Grid.Column="2"
+            Clicked="Button_Clicked_dot"
+            Text="." />
+        <Button
+            Grid.Row="6"
+            Grid.Column="3"
+            BackgroundColor="LightBlue"
+            Clicked="Button_Clicked_equal"
+            Text="=" />
+    </Grid>
+</ContentPage>
