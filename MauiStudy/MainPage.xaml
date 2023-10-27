@@ -19,11 +19,22 @@
             Grid.Column="1"
             Text="Add" />
 
-        <Button
-            Grid.Row="2"
-            BackgroundColor="LightPink"
-            Clicked="Button_Clicked_Calculator"
-            Text="Calculator" />
+        <VerticalStackLayout Grid.Row="2">
+            <Button
+                Grid.Row="2"
+                Margin="3"
+                BackgroundColor="LightPink"
+                Clicked="Button_Clicked_Calculator"
+                Text="Calculator"
+                TextColor="Blue" />
+            <Button
+                Grid.Row="2"
+                Margin="3"
+                BackgroundColor="LightPink"
+                Clicked="Button_Clicked_GoogleMap"
+                Text="Google map"
+                TextColor="Blue" />
+        </VerticalStackLayout>
 
         <CollectionView Grid.Row="3" Grid.ColumnSpan="2">
             <CollectionView.ItemsSource>
