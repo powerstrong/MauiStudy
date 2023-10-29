@@ -18,5 +18,10 @@ namespace MauiStudy
         {
             await Navigation.PushAsync(new GoogleMapPage());
         }
+
+        private async void Button_Clicked_mauitutorial(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NetmauiforbeginnersPage());
+        }
     }
 }

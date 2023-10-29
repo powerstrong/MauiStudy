@@ -3,64 +3,35 @@
     x:Class="MauiStudy.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
     <Grid
         Margin="5"
         ColumnDefinitions=".75*, .25*"
         ColumnSpacing="10"
-        RowDefinitions="100, auto, auto, *"
+        RowDefinitions="100, auto"
         RowSpacing="10">
         <Grid Grid.ColumnSpan="2" BackgroundColor="LightGoldenrodYellow">
             <Image Margin="20" Source="plaif_logo.png" />
         </Grid>
-        <Entry Grid.Row="1" Placeholder="Enter task" />
-        <Button
-            Grid.Row="1"
-            Grid.Column="1"
-            Text="Add" />
-
-        <VerticalStackLayout Grid.Row="2">
+        <VerticalStackLayout Grid.Row="1">
             <Button
-                Grid.Row="2"
                 Margin="3"
                 BackgroundColor="LightPink"
                 Clicked="Button_Clicked_Calculator"
                 Text="Calculator"
                 TextColor="Blue" />
             <Button
-                Grid.Row="2"
                 Margin="3"
                 BackgroundColor="LightPink"
                 Clicked="Button_Clicked_GoogleMap"
                 Text="Google map"
                 TextColor="Blue" />
+            <Button
+                Margin="3"
+                BackgroundColor="LightPink"
+                Clicked="Button_Clicked_mauitutorial"
+                Text=".Net Maui for Begginers tutorial"
+                TextColor="Blue"
+                ToolTipProperties.Text="clone coding from .net maui tutorial" />
         </VerticalStackLayout>
-
-        <CollectionView Grid.Row="3" Grid.ColumnSpan="2">
-            <CollectionView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Apples</x:String>
-                    <x:String>Bananas</x:String>
-                    <x:String>Oranges</x:String>
-                </x:Array>
-            </CollectionView.ItemsSource>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <SwipeView>
-                        <SwipeView.RightItems>
-                            <SwipeItems>
-                                <SwipeItem BackgroundColor="Red" Text="Delete" />
-                            </SwipeItems>
-                        </SwipeView.RightItems>
-                        <Grid Padding="0,5">
-                            <Frame>
-                                <Label FontSize="24" Text="{Binding .}" />
-                            </Frame>
-                        </Grid>
-                    </SwipeView>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
     </Grid>
-
 </ContentPage>
