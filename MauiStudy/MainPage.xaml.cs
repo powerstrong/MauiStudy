@@ -21,7 +21,7 @@ namespace MauiStudy
 
         private async void Button_Clicked_mauitutorial(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NetmauiforbeginnersPage());
+            await Navigation.PushAsync(new NetmauiforbeginnersPage(new ViewModel.NetmauiforbeginnersViewModel()));
         }
     }
 }

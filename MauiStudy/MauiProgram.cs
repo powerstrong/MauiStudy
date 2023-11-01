@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiStudy.Pages;
+using MauiStudy.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace MauiStudy
 {
@@ -18,6 +20,9 @@ namespace MauiStudy
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddSingleton<NetmauiforbeginnersPage>();
+            builder.Services.AddSingleton<NetmauiforbeginnersViewModel>();
 
             return builder.Build();
         }
