@@ -3,7 +3,10 @@
     x:Class="MauiStudy.Pages.NetmauiforbeginnersPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title=".Net Maui for Beginners">
+    xmlns:viewmodel="clr-namespace:MauiStudy.ViewModel"
+    Title=".Net Maui for Beginners"
+    x:DataType="viewmodel:MainViewModel">
+
     <Grid
         Margin="5"
         ColumnDefinitions=".75*, .25*"
@@ -13,7 +16,10 @@
         <Grid Grid.ColumnSpan="2" BackgroundColor="LightGoldenrodYellow">
             <Image Margin="20" Source="plaif_logo.png" />
         </Grid>
-        <Entry Grid.Row="1" Placeholder="Enter task" />
+        <Entry
+            Grid.Row="1"
+            Placeholder="Enter task"
+            Text="{Binding Text}" />
         <Button
             Grid.Row="1"
             Grid.Column="1"
