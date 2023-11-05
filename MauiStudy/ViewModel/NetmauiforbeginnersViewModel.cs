@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MauiStudy.Pages;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -49,7 +50,7 @@ namespace MauiStudy.ViewModel
         [RelayCommand]
         async Task Tap(string s)
         {
-            await Shell.Current.GoToAsync("DetailPage");
+            await Shell.Current.GoToAsync($"{"DetailPage"}?Text={s}");
         }
     }
 }
