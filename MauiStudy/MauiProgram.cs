@@ -24,6 +24,9 @@ namespace MauiStudy
             builder.Services.AddSingleton<NetmauiforbeginnersPage>();
             builder.Services.AddSingleton<NetmauiforbeginnersViewModel>();
 
+            builder.Services.AddTransient<DetailPage>();
+            builder.Services.AddTransient<DetailViewModel>();
+
             return builder.Build();
         }
     }
