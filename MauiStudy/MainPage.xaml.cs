@@ -1,4 +1,5 @@
 ﻿using MauiStudy.Pages;
+using MauiStudy.ViewModel;
 
 namespace MauiStudy
 {
@@ -21,7 +22,7 @@ namespace MauiStudy
 
         private async void Button_Clicked_mauitutorial(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NetmauiforbeginnersPage(new ViewModel.NetmauiforbeginnersViewModel()));
+            await Navigation.PushAsync(new NetmauiforbeginnersPage(new NetmauiforbeginnersViewModel(Connectivity.Current)));
         }
     }
 }

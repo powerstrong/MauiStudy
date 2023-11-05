@@ -19,16 +19,24 @@ namespace MauiStudy.ViewModel
         [ObservableProperty]
         string _text;
 
-        public NetmauiforbeginnersViewModel()
+        IConnectivity _connectivity;
+        public NetmauiforbeginnersViewModel(IConnectivity connectivity)
         {
             Items = new();
+            _connectivity = connectivity;
         }
 
         [RelayCommand]
-        void Add()
+        async Task Add()
         {
             if (string.IsNullOrWhiteSpace(Text))
             {
+                return;
+            }
+
+            if (_connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                await Shell.Current.DisplayAlert("Uh oh!", "No Internet!", "OK");
                 return;
             }
 

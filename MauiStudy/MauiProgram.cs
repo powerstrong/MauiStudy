@@ -21,6 +21,8 @@ namespace MauiStudy
 		builder.Logging.AddDebug();
 #endif
 
+            builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
+
             builder.Services.AddSingleton<NetmauiforbeginnersPage>();
             builder.Services.AddSingleton<NetmauiforbeginnersViewModel>();
 
