@@ -10,7 +10,7 @@
     <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label
             FontAttributes="Bold"
-            FontSize="70"
+            FontSize="60"
             HorizontalOptions="Center"
             Text="{Binding CurrentTime}"
             TextColor="White"
@@ -23,7 +23,7 @@
                 Command="{Binding StartCommand}"
                 FontAttributes="Bold"
                 FontSize="Large"
-                Text="시작"
+                Text="{Binding StartButtonText}"
                 WidthRequest="150" />
             <Button
                 BackgroundColor="LimeGreen"
