@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiStudy.Pages.StopwatchPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:MauiStudy.ViewModel"
+    Title="⏱️ Stopwatch"
+    x:DataType="vm:StopwatchViewModel"
+    BackgroundColor="Salmon">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label
+            FontAttributes="Bold"
+            FontSize="70"
+            HorizontalOptions="Center"
+            Text="{Binding CurrentTime}"
+            TextColor="White"
+            VerticalOptions="Center" />
+        <HorizontalStackLayout
+            Margin="0,20"
+            HorizontalOptions="Center"
+            Spacing="15">
+            <Button
+                Command="{Binding StartCommand}"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="시작"
+                WidthRequest="150" />
+            <Button
+                BackgroundColor="LimeGreen"
+                Command="{Binding InitCommand}"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="초기화"
+                WidthRequest="150" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

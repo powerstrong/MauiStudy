@@ -12,32 +12,39 @@
         <Grid Grid.ColumnSpan="2" BackgroundColor="LightGoldenrodYellow">
             <Image Margin="20" Source="plaif_logo.png" />
         </Grid>
-        <VerticalStackLayout Grid.Row="1">
+        <VerticalStackLayout
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Margin="10,0">
             <Button
                 Margin="3"
                 BackgroundColor="LightPink"
                 Clicked="Button_Clicked_Calculator"
-                Text="Calculator"
+                Text="🧮 Calculator"
                 TextColor="Blue" />
             <Button
                 Margin="3"
                 BackgroundColor="MediumPurple"
                 Clicked="Button_Clicked_GoogleMap"
-                Text="Google map"
+                Text="🗺️ Google map"
                 TextColor="Blue" />
             <Button
                 Margin="3"
                 BackgroundColor="LightGreen"
                 Clicked="Button_Clicked_mauitutorial"
-                Text=".Net Maui for Begginers tutorial"
+                Text="☺️ .Net Maui for Begginers tutorial"
                 TextColor="Blue"
                 ToolTipProperties.Text="clone coding from .net maui tutorial" />
             <Button
                 Margin="3"
                 BackgroundColor="LightBlue"
                 Clicked="Button_Clicked_ModbusTCPTest"
-                Text="Modbus TCP test"
+                Text="☎️ Modbus TCP test"
                 TextColor="Blue" />
+            <Button
+                Margin="3"
+                Clicked="Button_Clicked_Stopwatch"
+                Text="⏱️ Stopwatch" />
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

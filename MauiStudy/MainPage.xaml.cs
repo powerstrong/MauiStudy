@@ -29,5 +29,10 @@ namespace MauiStudy
         {
             await Navigation.PushAsync(new ModbusTcpTestPage());
         }
+
+        private async void Button_Clicked_Stopwatch(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StopwatchPage());
+        }
     }
 }
