@@ -3,8 +3,8 @@
     x:Class="MauiStudy.Pages.GoogleMapPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Google map test">
+    Title="PLAIF webview test">
     <Grid>
-        <WebView Source="https://www.google.com/maps" />
+        <WebView Source="https://www.plaif.com/" />
     </Grid>
 </ContentPage>

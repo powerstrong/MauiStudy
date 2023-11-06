@@ -24,5 +24,10 @@ namespace MauiStudy
         {
             await Navigation.PushAsync(new NetmauiforbeginnersPage(new NetmauiforbeginnersViewModel(Connectivity.Current)));
         }
+
+        private async void Button_Clicked_ModbusTCPTest(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ModbusTcpTestPage());
+        }
     }
 }

@@ -20,5 +20,8 @@
                 VerticalOptions="Center" />
         </StackLayout>
         <Button Command="{Binding GoBackCommand}" Text="Go Back" />
+        <Grid RowDefinitions="12,12,12" ColumnDefinitions="12,123,123,auto,*">
+            <Button Grid.Row="0" Grid.Column="3" Text="asdf"/>
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

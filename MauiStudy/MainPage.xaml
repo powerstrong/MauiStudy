@@ -21,17 +21,23 @@
                 TextColor="Blue" />
             <Button
                 Margin="3"
-                BackgroundColor="LightPink"
+                BackgroundColor="MediumPurple"
                 Clicked="Button_Clicked_GoogleMap"
                 Text="Google map"
                 TextColor="Blue" />
             <Button
                 Margin="3"
-                BackgroundColor="LightPink"
+                BackgroundColor="LightGreen"
                 Clicked="Button_Clicked_mauitutorial"
                 Text=".Net Maui for Begginers tutorial"
                 TextColor="Blue"
                 ToolTipProperties.Text="clone coding from .net maui tutorial" />
+            <Button
+                Margin="3"
+                BackgroundColor="LightBlue"
+                Clicked="Button_Clicked_ModbusTCPTest"
+                Text="Modbus TCP test"
+                TextColor="Blue" />
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
