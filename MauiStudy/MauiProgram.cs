@@ -29,9 +29,6 @@ namespace MauiStudy
             builder.Services.AddTransient<DetailPage>();
             builder.Services.AddTransient<DetailViewModel>();
 
-            //builder.Services.AddTransient<DetailPage>();
-            //builder.Services.AddTransient<DetailViewModel>();
-
             return builder.Build();
         }
     }

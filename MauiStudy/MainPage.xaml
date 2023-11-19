@@ -45,6 +45,10 @@
                 Margin="3"
                 Clicked="Button_Clicked_Stopwatch"
                 Text="⏱️ Stopwatch" />
+            <Button
+                Margin="3"
+                Clicked="Button_Clicked_gRPCTest"
+                Text="🚢 grpc test" />
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

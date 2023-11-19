@@ -34,5 +34,10 @@ namespace MauiStudy
         {
             await Navigation.PushAsync(new StopwatchPage());
         }
-    }
+
+		private async void Button_Clicked_gRPCTest(object sender, EventArgs e)
+		{
+			//await Navigation.PushAsync(new Pages.TabbedPage());
+		}
+	}
 }
