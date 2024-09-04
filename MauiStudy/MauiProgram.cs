@@ -1,5 +1,6 @@
 ﻿using MauiStudy.Pages;
 using MauiStudy.ViewModel;
+using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
 
 namespace MauiStudy
@@ -20,6 +21,8 @@ namespace MauiStudy
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+
+            builder.UseMicrocharts();
 
             builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
 

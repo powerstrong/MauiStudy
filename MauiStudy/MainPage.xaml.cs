@@ -40,5 +40,10 @@ namespace MauiStudy
             await DisplayAlert("🙏 sorry!", "not yet..", "OK");
 			//await Navigation.PushAsync(new Pages.TabbedPage());
 		}
-	}
+
+        private async void Button_Clicked_ChartTest(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChartPage());
+        }
+    }
 }

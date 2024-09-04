@@ -47,11 +47,16 @@
                 Text="⏱️ Stopwatch" />
             <Button
                 Margin="3"
+                BackgroundColor="Azure"
+                BorderColor="LightBlue"
+                BorderWidth="0.1"
                 Clicked="Button_Clicked_gRPCTest"
-                Text="🚢 grpc test" />
+                Text="🚢 grpc test"
+                TextColor="Blue" />
             <Button
                 Margin="3"
                 BackgroundColor="Yellow"
+                Clicked="Button_Clicked_ChartTest"
                 Text="📊 chart test"
                 TextColor="Blue" />
         </VerticalStackLayout>
