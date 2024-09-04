@@ -49,6 +49,11 @@
                 Margin="3"
                 Clicked="Button_Clicked_gRPCTest"
                 Text="🚢 grpc test" />
+            <Button
+                Margin="3"
+                BackgroundColor="Yellow"
+                Text="📊 chart test"
+                TextColor="Blue" />
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

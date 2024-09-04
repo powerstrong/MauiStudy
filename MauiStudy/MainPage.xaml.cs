@@ -37,6 +37,7 @@ namespace MauiStudy
 
 		private async void Button_Clicked_gRPCTest(object sender, EventArgs e)
 		{
+            await DisplayAlert("🙏 sorry!", "not yet..", "OK");
 			//await Navigation.PushAsync(new Pages.TabbedPage());
 		}
 	}
